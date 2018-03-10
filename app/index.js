@@ -13,7 +13,6 @@ router.use(function (req, res, next) {
 router.get('/events', (req, res, next) => {
   Event.find()
         .then(events => {
-          console.log("Hello World");
           res.json({events})
         })
         .catch(next)
