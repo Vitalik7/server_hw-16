@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 const config = require('./config')
-const event = require('./app/index')
+const event = require('./event/event')
 
 require('./db')
 
